@@ -1,0 +1,19 @@
+# Entornos virtuales
+venv_ia/
+.venv/
+
+# Modelos pesados de RVC
+models/
+
+# Archivos de audio generados
+audios/temp/
+audios/output/
+*.mp3
+*.wav
+
+# Caché de Python
+__pycache__/
+*.pyc
+core/__pycache__/
+
+assets/
