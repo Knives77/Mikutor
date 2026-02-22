@@ -14,7 +14,7 @@ torch.load = _patched_load
 from rvc_python.infer import RVCInference
 from config import RVC_CONFIG, MODEL_FOLDER
 
-class RecoveryProtocolRVC:
+class Mikutor:
     def __init__(self):
         try:
             self.model_path = glob.glob(os.path.join(MODEL_FOLDER, "*.pth"))[0]
@@ -36,7 +36,7 @@ class RecoveryProtocolRVC:
         self.rvc.index_rate = RVC_CONFIG["index_rate"]
         self.rvc.protect = RVC_CONFIG["protect"]
         self.rvc.rms_mix_rate = RVC_CONFIG["rms_mix_rate"]
-        self.rvc.pitch = RVC_CONFIG["pitch"]
+        # self.rvc.pitch = RVC_CONFIG["pitch"]
         self.rvc.f0_up_key = RVC_CONFIG["f0_up_key"]
         self.rvc.resample_sr = RVC_CONFIG["resample_sr"]
 
